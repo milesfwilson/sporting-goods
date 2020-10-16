@@ -12,7 +12,7 @@ function _draw() {
   let cartTemplate = ""
   cart.forEach(i => cartTemplate += i.CartTemplate)
   document.getElementById("cart").innerHTML = cartTemplate
-  document.getElementById("total").innerHTML = `${ProxyState.total}`
+  document.getElementById("total").innerHTML = `<h5>Cart Total: $${ProxyState.total}</h5>`
 }
 export default class ItemsController {
   constructor() {
